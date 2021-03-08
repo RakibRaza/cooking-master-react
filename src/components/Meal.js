@@ -41,7 +41,6 @@ const Meal = ({
   return (
     <Grid item sm={6} md={4}>
       <Card
-        onClick={() => history.push(`/meal/${idMeal}`)}
         style={{
           height: "100%",
           display: "flex",
@@ -62,7 +61,7 @@ const Meal = ({
             </IconButton>
           }
         />
-        <CardActionArea>
+        <CardActionArea onClick={() => history.push(`/meal/${idMeal}`)}>
           <CardMedia
             component="img"
             alt={strMeal}
