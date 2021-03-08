@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Container,
-  makeStyles,
-  Paper,
-  Typography,
-} from "@material-ui/core";
+import { Box, Button, makeStyles, Typography } from "@material-ui/core";
 import errorBg from "../images/hero-bg.jpg";
 import React from "react";
 import { Link } from "react-router-dom";

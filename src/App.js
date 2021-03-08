@@ -10,11 +10,13 @@ import About from "./Pages/About";
 import { theme } from "./Theme";
 import Error from "./Pages/Error";
 import Contact from "./Pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Switch>
           <Route exact path="/">
