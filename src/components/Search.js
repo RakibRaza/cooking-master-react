@@ -6,7 +6,7 @@ import {
   makeStyles,
   TextField,
 } from "@material-ui/core";
-import { useRef } from "react";
+
 import { useGlobalContext } from "../context";
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +38,7 @@ const Search = () => {
     >
       <form>
         <Grid container spacing={2}>
-          <Grid xs={8} item>
+          <Grid xs={12} sm={8} item>
             <TextField
               value={keyword}
               onChange={(e) => setKeyword(e.target.value)}
@@ -48,7 +48,7 @@ const Search = () => {
               variant="outlined"
             />
           </Grid>
-          <Grid xs={4} item>
+          <Grid xs={12} sm={4} item>
             <Button
               onClick={handleSubmit}
               type="submit"
